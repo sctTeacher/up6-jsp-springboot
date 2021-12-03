@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>up6-vue</title>
+    ${pageParam}
+    <script type="text/javascript" src="../js/vue.min.js"></script>
+    <script type="text/javascript" src="../js/jquery-1.4.min.js"></script>
+    <script type="text/javascript" src="../js/json2.min.js" charset="utf-8"></script>
+    ${up6Header}
+</head>
+<body>
+<div id="app">
+    {{ message }}
+    <up6></up6>
+</div>
+<script type="text/javascript">
+    Vue.component('up6', {
+        data: function(){
+            return {
+                upApp: null
+            }
+        },
+        mounted: function(){
+            this.upApp = new HttpUploaderMgr();
+            this.upApp.load_to("up6-div");
+        },
+        destoryed: function(){
+        },
+        methods: {
+            open_file: function () { this.upApp.openFile(); }
+            , open_folder: function () { this.upApp.openFolder(); }
+        },
+        template: '<div id="up6-div"></div>'
+    });
+
+    var app = new Vue({
+        el: '#app',
+        data: {
+            message: '演示up6如何在vue中使用'
+        }
+    });
+</script>
+</body>
+</html>

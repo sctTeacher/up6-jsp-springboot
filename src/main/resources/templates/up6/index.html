@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>up6演示页面</title>
+    ${pageParam}
+    <script type="text/javascript" src="/static/js/jquery-1.4.min.js"></script>
+    <script type="text/javascript" src="/static/js/json2.min.js" charset="utf-8"></script>
+    ${up6Header}
+    <script language="javascript" type="text/javascript">
+        var cbMgr = new HttpUploaderMgr();
+        cbMgr.event.md5Complete = function (obj, md5) { /*alert(md5);*/ };
+        cbMgr.event.fileAppend = function (obj) { /*alert(obj.pathSvr);*/ };
+        cbMgr.event.fileComplete = function (obj) { /*alert(obj.pathSvr);*/ };
+        cbMgr.Config.Fields["test"] = "test";
+
+        $(function()
+        {
+            cbMgr.load_to("FilePanel");
+            //上传指定文件
+            $("#btnUpF").click(function () {
+                var path = $("#filePath").val();
+                cbMgr.addFile(path);
+            });
+            //上传指定目录
+            $("#btnUpFd").click(function () {
+                var path = $("#folderPath").val();
+                cbMgr.addFolder(path);
+            });
+        });
+    </script>
+</head>
+
+<body>
+<p>up6多文件上传演示页面</p>
+<p><a href="/up6/clear" target="_blank">清空数据库</a></p>
+<p><a href="/filemgr/index" target="_blank">文件管理器示例</a></p>
+<p><a href="/up6/panel" target="_blank">单面板示例</a></p>
+<p><a href="/up6/single" target="_blank">单文件示例</a></p>
+<p><a href="vue/index.jsp" target="_blank">vue示例</a></p>
+<p><a href="/down2/index" target="_blank">文件下载示例</a></p>
+<p><a href="/down2/ligerui" target="_blank">ligerui下载示例</a></p>
+<p>
+    文件路径：<input id="filePath" type="text" size="50" value="D:\\360safe-inst.exe" />&nbsp;
+    <input id="btnUpF" type="button" value="上传本地文件" />
+</p>
+<p>
+    目录路径：<input id="folderPath" type="text" size="50" value="C:\\Users\\Administrator\\Desktop\\test" />&nbsp;
+    <input id="btnUpFd" type="button" value="上传本地目录" />
+</p>
+<div id="FilePanel"></div>
+<div id="msg"></div>
+</body>
+</html>

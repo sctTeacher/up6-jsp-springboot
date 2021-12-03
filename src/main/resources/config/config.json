@@ -1,0 +1,45 @@
+{
+    "database": {
+        "connection":{
+            "type":"mysql",
+            "mysql":{
+                "driver":"com.mysql.jdbc.Driver",
+                "url":"jdbc:mysql://47.94.226.83:3306/yxsd?user=root&password=Sc123456@&characterEncoding=UTF-8&serverTimezone=UTC",
+                "name":"",
+                "pass":""
+            },
+            "oracle":{
+                "driver":"oracle.jdbc.driver.OracleDriver",
+                "url":"jdbc:oracle:thin:@localhost:1521:orcl",
+                "name":"system",
+                "pass":"123456"
+            },
+            "sql":{
+                "driver":"com.microsoft.sqlserver.jdbc.SQLServerDriver",
+                "url":"jdbc:sqlserver://127.0.0.1:1433;DatabaseName=up6",
+                "name":"sa",
+                "pass":"123456"
+            },
+            "dmdb":{
+                "driver":"dm.jdbc.driver.DmDriver",
+                "url":"jdbc:dm://localhost:5236/DAMENG",
+                "name":"SYSDBA",
+                "pass":"123456789"
+            },
+            "kingbase":{
+                "driver":"com.kingbase8.Driver",
+                "url":"jdbc:kingbase8://192.168.0.117:54321/up6",
+                "name":"SYSTEM",
+                "pass":"123456"
+            }
+        },
+        "up6_files": "config/database/up6_files.json",
+        "up6_folders": "config/database/up6_folders.json",
+        "down_files": "config/database/down_files.json"
+    },
+    "path": "config/path.json",
+    "ui": {
+        "down": "/filemgr/data/ui-down.html",
+        "up": "/filemgr/data/ui-down.html"
+    }
+}

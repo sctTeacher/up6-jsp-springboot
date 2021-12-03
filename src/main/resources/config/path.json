@@ -1,0 +1,127 @@
+{
+    "rootAbs": "/",
+    "root": "http://localhost:8080/",
+    "upload-folder":"d:/upload",
+    "security":{
+        "encrypt":false,
+        "key":"+Lm25MO1SnrSVPWdZ1Sg/w==",
+        "token":false},
+    "version":{
+        "up6":"2,7,122,25521",
+        "down2":"1,2,73,25530"
+    },
+    "license2":{
+        "up6":"",
+        "down2":""
+    },
+    "plugin":{
+        "up6":{
+            "ie32":"http://res2.ncmem.com/download/up6/pack/6.5.32/up6.cab",
+            "ie64":"http://res2.ncmem.com/download/up6/pack/6.5.32/up64.cab",
+            "chr":"http://res2.ncmem.com/download/up6/pack/6.5.32/up6.crx",
+            "firefox":"http://res2.ncmem.com/download/up6/pack/6.5.32/up6.xpi",
+            "exe":"http://res2.ncmem.com/download/up6/pack/6.5.32/up6.exe",
+            "mac":"http://res2.ncmem.com/download/up6/mac/1.0.14/up6.pkg",
+            "linux":"http://res2.ncmem.com/download/up6/linux/1.0.17/com.ncmem.up6_2020.12.3-1_amd64.deb",
+            "arm64":"http://res2.ncmem.com/download/up6/arm64/1.0.8/com.ncmem.up6_2020.12.3-1_arm64.deb",
+            "mips64":"http://res2.ncmem.com/download/up6/mips64el/1.0.4/com.ncmem.up6_2020.12.3-1_mips64el.deb"
+        },
+        "down2":{
+            "ie32":"http://res2.ncmem.com/download/down2/pack/2.4.32/down2.cab",
+            "ie64":"http://res2.ncmem.com/download/down2/pack/2.4.32/down64.cab",
+            "chr":"http://res2.ncmem.com/download/down2/pack/2.4.32/down2.crx",
+            "firefox":"http://res2.ncmem.com/download/down2/pack/2.4.32/down2.xpi",
+            "exe":"http://res2.ncmem.com/download/down2/pack/2.4.32/down2.exe",
+            "mac":"http://res2.ncmem.com/download/down2/mac/1.0.11/down2.pkg",
+            "linux":"http://res2.ncmem.com/download/down2/linux/1.0.11/down2.deb",
+            "arm64":"http://res2.ncmem.com/download/down2/arm64/1.0.7/com.ncmem.down2_2020.12.3-1_arm64.deb",
+            "mips64":"http://res2.ncmem.com/download/down2/mips64/1.0.6/com.ncmem.down2_2020.12.3-1_mips64el.deb"
+        }
+    },
+    "up6": [
+        "http://localhost:8080/static/js/up6.config.js",
+        "http://localhost:8080/static/js/up6.app.js",
+        "http://localhost:8080/static/js/up6.edge.js",
+        "http://localhost:8080/static/js/up6.file.js",
+        "http://localhost:8080/static/js/up6.folder.js",
+        "http://localhost:8080/static/js/up6.css",
+        "http://localhost:8080/static/js/up6.js"
+    ],
+    "up6-panel": [
+        "http://localhost:8080/static/js/up6.config.js",
+        "http://localhost:8080/static/js/up6.app.js",
+        "http://localhost:8080/static/js/up6.edge.js",
+        "http://localhost:8080/static/js/panel/up6.file.js",
+        "http://localhost:8080/static/js/panel/up6.folder.js",
+        "http://localhost:8080/static/js/panel/up6.css",
+        "http://localhost:8080/static/js/panel/up6.js"
+    ],
+    "up6-single": [
+        "http://localhost:8080/static/js/up6.config.js",
+        "http://localhost:8080/static/js/up6.app.js",
+        "http://localhost:8080/static/js/up6.edge.js",
+        "http://localhost:8080/static/js/up6.file.js",
+        "http://localhost:8080/static/js/up6.folder.js",
+        "http://localhost:8080/static/js/up6.css",
+        "http://localhost:8080/static/js/up6-single.js"
+    ],
+    "down2": [
+        "http://localhost:8080/static/down2/js/down.app.js",
+        "http://localhost:8080/static/down2/js/down.edge.js",
+        "http://localhost:8080/static/down2/js/down.file.js",
+        "http://localhost:8080/static/down2/js/down.folder.js",
+        "http://localhost:8080/static/down2/js/down.js",
+        "http://localhost:8080/static/down2/js/down.css",
+        "http://localhost:8080/static/down2/js/knockout.js"
+    ],
+    "fm": "http://localhost:8080/static/filemgr/",
+    "res": "http://localhost:8080/static/filemgr/res/",
+    "fm-up6": [
+        "http://localhost:8080/static/filemgr/up6/up6.config.js",
+        "http://localhost:8080/static/filemgr/up6/up6.app.js",
+        "http://localhost:8080/static/filemgr/up6/up6.edge.js",
+        "http://localhost:8080/static/filemgr/up6/up6.file.js",
+        "http://localhost:8080/static/filemgr/up6/up6.folder.js",
+        "http://localhost:8080/static/filemgr/up6/up6.css",
+        "http://localhost:8080/static/filemgr/up6/up6.js"
+    ],
+    "fm-down2": [
+        "http://localhost:8080/static/filemgr/down2/down.app.js",
+        "http://localhost:8080/static/filemgr/down2/down.edge.js",
+        "http://localhost:8080/static/filemgr/down2/down.file.js",
+        "http://localhost:8080/static/filemgr/down2/down.folder.js",
+        "http://localhost:8080/static/filemgr/down2/down.js",
+        "http://localhost:8080/static/filemgr/down2/down.css"
+    ],
+    "jquery": [
+        "http://localhost:8080/static/js/json2.min.js",
+        "http://localhost:8080/static/filemgr/res/jquery/jquery-1.9.1.min.js",
+        "http://localhost:8080/static/filemgr/res/jquery/jquery.serializejson.min.js"
+    ],
+    "bootstrap": [
+        "http://localhost:8080/static/filemgr/res/bootstrap/js/bootstrap.min.js",
+        "http://localhost:8080/static/filemgr/res/bootstrap/css/bootstrap.min.css"
+    ],
+    "jstree": [
+        "http://localhost:8080/static/filemgr/res/jstree/themes/default/style.min.css",
+        "http://localhost:8080/static/filemgr/res/jstree/jstree.min.js"
+    ],
+    "layerui": [
+        "http://localhost:8080/static/filemgr/res/layui/css/layui.css",
+        "http://localhost:8080/static/filemgr/res/layui/layui.js"
+    ],
+    "moment": [
+        "http://localhost:8080/static/filemgr/res/moment/moment-with-locales.min.js"
+    ],
+    "vue": "http://localhost:8080/static/filemgr/res/vue.min.js",
+    "My97DatePicker": "http://localhost:8080/static/filemgr/res/My97DatePicker/WdatePicker.js",
+    "ligerui": [
+        "http://localhost:8080/static/ligerui/ligerUI/skins/Aqua/css/ligerui-all.css",
+        "http://localhost:8080/static/ligerui/ligerUI/skins/Gray/css/all.css",
+        "http://localhost:8080/static/ligerui/jquery/jquery-1.9.0.min.js",
+        "http://localhost:8080/static/ligerui/ligerUI/js/ligerui.all.js",
+        "http://localhost:8080/static/ligerui/jquery.cookie.js",
+        "http://localhost:8080/static/ligerui/json2.js",
+        "http://localhost:8080/static/knockout.js"
+    ]
+}

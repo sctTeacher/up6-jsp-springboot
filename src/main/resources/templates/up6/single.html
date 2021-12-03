@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>up6-单文件演示页面</title>
+    ${pageParam}
+    <script type="text/javascript" src="/static/js/jquery-1.4.min.js"></script>
+    <script type="text/javascript" src="/static/js/json2.min.js" charset="utf-8"></script>
+    ${up6Header}
+    <script language="javascript" type="text/javascript">
+        var fileMgr = new HttpUploaderMgr();
+        fileMgr.event.md5Complete = function (obj, md5) { /*alert(md5);*/ };
+        fileMgr.event.fileAppend = function (obj) { /*alert(obj.pathSvr);*/ };
+        fileMgr.event.fileComplete = function (obj) { /*alert(obj.pathSvr);*/ };
+        fileMgr.Config.Fields["test"] = "test";
+
+        $(function()
+        {
+            fileMgr.loadTo("upPnl");
+
+            $("#btnSel").click(function()
+            {
+                fileMgr.postAuto(); //
+            });
+
+            $("#btnPostLoc").click(function ()
+            {
+                fileMgr.postLoc("D:\\Soft\\QQ2015.exe"); //
+            });
+        });
+    </script>
+</head>
+
+<body>
+<p>up6单文件演示页面</p>
+<p><a href="/up6/clear" target="_blank">清空数据库</a></p>
+<p><a href="/filemgr/index" target="_blank">文件管理器示例</a></p>
+<p><a href="/up6/panel" target="_blank">单面板示例</a></p>
+<p><a href="/up6/single" target="_blank">单文件示例</a></p>
+<p><a href="vue/index.jsp" target="_blank">vue示例</a></p>
+<p><a href="/down2/index" target="_blank">文件下载示例</a></p>
+<div id="upPnl"></div>
+<a id="btnSetup">安装控件</a>
+<input id="btnSel" type="button" value="浏览" />
+<input id="btnPostLoc" type="button" value="上传本地文件" />
+</body>
+</html>
